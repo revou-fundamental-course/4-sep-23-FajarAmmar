@@ -1,0 +1,150 @@
+/* 
+Primary-color : #439DC7;
+secondary-color: #
+*/
+body{
+     background-color: #D5E9F1;
+     font-size: 15px;
+     box-sizing: border-box;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+section{
+     padding: 10px 0;
+}
+.header-page{
+     background-color: #22668D;
+     padding: 8px 1em;
+     color: white;
+     text-align: center;
+}
+
+.detail-text{
+     color: rgb(178, 178, 178);
+     font-size: small!important;
+}
+
+.page-title{
+     text-align: center;
+     transition: 0.2s ease-out;
+}
+
+#square{
+     height: 10em;
+     width: 10em;
+     
+}
+
+.shape{
+     background-color: transparent;
+     border: 5px solid #439DC7;
+     margin-right: 2em;
+     transition: 0.5s ease-in-out;
+     /* border-style: solid;
+     border-color: red; */
+}
+
+.information-shape{
+     margin: 0 3em;
+     height: fit-content;
+     display: flex;
+}
+
+.card {
+     background-color: white;
+     padding: 1em 2em;
+     margin: 0 5px;
+     border-radius: 20px;
+     margin-bottom: 10px;
+     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+     transition: 0.3s ease-out;
+}
+
+.formula{
+     display: flex;
+     height: fit-content;
+}
+
+.calculate{
+     border-bottom: 1px solid black;
+     border-top: 1px solid black;
+     padding: 1em 3em;
+     margin-top: 2em;
+     justify-content: center;
+     text-align: center;
+}
+
+.input-value{
+     display: grid;
+     margin: 8px 0;
+     gap: 1em;
+     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+     
+}
+.clearable-input {
+     position: relative;
+     width: 100%;
+     margin: 0 auto;
+     
+ }
+
+ .clearable-input input {
+     height: 2em;
+     width: 100%;
+     border-radius: 5px;
+     
+ }
+
+ .clearable-input .clear-button {
+     position: absolute;
+     color: white;
+     margin: 5px 0 ;
+     margin-right: 10px;
+     top: 0;
+     right: 5px;
+     bottom: 0;
+     width: 20px;
+     line-height: 20px;
+     background-color: #FA9595;
+     border-radius: 50%;
+     text-align: center;
+     cursor: pointer;
+     opacity: 0;
+ }
+
+ .clearable-input input:focus + .clear-button {
+     opacity: 1;
+ }
+
+ .button-section{
+     padding: 5px 0;
+ }
+ 
+ .btn{
+     border-radius: .5rem;
+     border-color: transparent;
+     box-sizing: border-box;
+     padding:10px 1rem;
+     text-align: center;
+     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+     cursor: pointer;
+     touch-action: manipulation;
+     color: white;
+ }
+
+ .btn-luas{
+     background-color: #338A99;
+ }
+
+ .btn-kel{
+     background-color: #C4A74F;
+ }
+
+ .result{
+     background-color: #344966;
+     margin: 10px;
+ }
+
+ .result h2{
+     color: white;
+ }
