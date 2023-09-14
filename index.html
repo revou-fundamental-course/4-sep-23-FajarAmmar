@@ -22,7 +22,7 @@
                </div>
           </section>
           <!-- Section Shape square Content -->
-          <section>
+          <section class="shape-content" id="square-content">
                <div class="information-shape">
                     <div id="square" class="shape"></div>
                     <div class="formula">
@@ -37,8 +37,10 @@
                          </div>
                          <div class="card">
                               <label>Keterangan</label>
-                              <p>L = Luas Persegi</p>
                               <p>S = Sisi Persegi</p>
+                              <p>L = Luas Persegi</p>
+                              <p>K = Keliling Persegi</p>
+                              
                          </div>
                     </div>
                </div>
@@ -48,8 +50,10 @@
                               <label for="InputField">Sisi Persegi</label>
                               <div class ="input-value">
                                    <div class="clearable-input">
-                                        <input type="number" id="InputField" placeholder="Masukkan Sisi Persegi">
-                                        <div class="clear-button" id="clearInput">x</div>
+                                        <form>
+                                             <input type="text" class="input-field" id="Inputsisipersegi" placeholder="Masukkan Sisi Persegi" required>
+                                             <button class="clear-button" type="reset">x</button>
+                                        </form>
                                    </div>
                               </div>
                          </div>
@@ -61,16 +65,24 @@
                </div>
                <div class="result card" >
                     <h2>Hasil</h2>
-                    <div class="result-luas card">
+                    <div class="card luas">
+                         <label><b>Luas Persegi</b></label>
                          <p>L= S x S</p>
+                         <div id="Persegi-luas"></div>
                          
                     </div>
-                    <div class="result-kel card">
-                         <p>L= 4 x S</p>
+                    <div class="card keliling">
+                         <label><b>Keliling Persegi</b></label>
+                         <p>K= 4 x S</p>
+                         <p class="result-kel"></p>
+                         <div id="Persegi-kel"></div>
                          
                     </div>
                </div>
           </section>
      </main>
+
+     <!-- Link to Script -->
+     <script src="js/script.js"></script>
 </body>
 </html>
