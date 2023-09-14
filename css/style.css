@@ -12,7 +12,7 @@ body{
 section{
      padding: 10px 0;
 }
-.header-page{
+header{
      background-color: #22668D;
      padding: 8px 1em;
      color: white;
@@ -38,7 +38,8 @@ section{
 .shape{
      background-color: transparent;
      border: 5px solid #439DC7;
-     margin-right: 2em;
+     margin-right: 1em;
+     margin-bottom: 10px;
      transition: 0.5s ease-in-out;
      /* border-style: solid;
      border-color: red; */
@@ -47,7 +48,8 @@ section{
 .information-shape{
      margin: 0 3em;
      height: fit-content;
-     display: flex;
+     display: grid;
+     grid-template-columns: repeat(2, max-content);
 }
 
 .card {
@@ -61,8 +63,16 @@ section{
 }
 
 .formula{
-     display: flex;
+     width: 100%;
      height: fit-content;
+     display: flex;
+     
+     /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+}
+
+.information{
+     min-width: fit-content;
+     flex-grow: 1;
 }
 
 .calculate{
@@ -159,3 +169,14 @@ section{
  .result h2{
      color: white;
  }
+
+ @media screen and (max-width: 600px) {
+     .information-shape {
+       grid-template-rows: auto; /* Kembali ke satu baris */
+       grid-template-columns: 1fr; /* Mengatur satu kolom untuk tampilan kecil */
+     }
+
+     .formula{
+          flex-wrap: wrap;
+     }
+   }
